@@ -1,0 +1,100 @@
+{
+  "_from": "selenium-chrome-proxy-plugin@^0.2.2",
+  "_id": "selenium-chrome-proxy-plugin@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-LRbO5kMyraPOuS6rDmZ5GrKlmq9rtIF5B4R4L4erw+362awbCNYgmcohjJkanX5chA+lJMdCvIbnc3IAaI1JDg==",
+  "_location": "/selenium-chrome-proxy-plugin",
+  "_phantomChildren": {
+    "jszip": "3.2.2",
+    "rimraf": "2.7.1",
+    "tmp": "0.0.30",
+    "xml2js": "0.4.23"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "selenium-chrome-proxy-plugin@^0.2.2",
+    "name": "selenium-chrome-proxy-plugin",
+    "escapedName": "selenium-chrome-proxy-plugin",
+    "rawSpec": "^0.2.2",
+    "saveSpec": null,
+    "fetchSpec": "^0.2.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/selenium-chrome-proxy-plugin/-/selenium-chrome-proxy-plugin-0.2.2.tgz",
+  "_shasum": "451668f8903e8af9044a80c9a7b4ad1509de4260",
+  "_spec": "selenium-chrome-proxy-plugin@^0.2.2",
+  "_where": "C:\\Users\\user\\Desktop\\SeleniumWebDriverJS",
+  "author": {
+    "name": "Alexander",
+    "email": "alykoshin@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/alykoshin/selenium-chrome-proxy-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "archiver": "^2.1.0",
+    "debug": "^3.1.0",
+    "mkdirp": "^0.5.1",
+    "selenium-webdriver": "^3.6.0",
+    "uuid": "^3.1.0"
+  },
+  "deprecated": false,
+  "description": "Chrome plugin generator for setting private proxies",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-things": "^0.2.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.10.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
+    "jsinspect": "^0.12.7",
+    "mocha": "^4.0.1",
+    "mockery": "^2.1.0",
+    "sinon": "^4.0.2"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "homepage": "https://github.com/alykoshin/selenium-chrome-proxy-plugin",
+  "keywords": [
+    "selenium,webdriver,chrome,plugin,private,proxy,username,password"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "selenium-chrome-proxy-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alykoshin/selenium-chrome-proxy-plugin.git"
+  },
+  "scripts": {
+    "___test": "echo \"Error: no test specified\" && exit 1",
+    "__major-release": "npm test && npm run _major-release && npm run _push",
+    "__test": "echo \"Warning: no test specified\" && exit 0",
+    "_check-changes": "echo '* Checking if git directory is clean... '; bash -c '[[ -z $(git status -uno --porcelain) ]]'",
+    "_commit": "git commit -am \"commit by 'npm run commit'\"",
+    "_deps-check": "npm-check-updates --error-level 2",
+    "_deps-update": "echo '* Updating packages versions... '; npm-check-updates -u --upgradeAll --error-level 1 && npm install",
+    "_major-release": "npm version major && npm publish",
+    "_minor-release": "npm version minor && npm publish",
+    "_patch-release": "npm version patch && npm publish",
+    "_push": "git push --follow-tags",
+    "_test": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*",
+    "commit-and-push": "npm run _commit && npm test && npm run _push",
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "inspect": "jsinspect --ignore 'coverage|test|lib/templates|examples'",
+    "lint": "eslint -f unix .",
+    "minor-release": "npm test && npm run _minor-release && npm run _push",
+    "nsp": "nsp check",
+    "patch-release": "npm test && npm run _patch-release && npm run _push",
+    "pretest": "npm run lint && npm run inspect && npm run nsp && npm run _deps-check",
+    "test": "npm run _test",
+    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*",
+    "update-deps": "npm run _check-changes && npm run _deps-update && npm test && git commit -am 'updated deps'"
+  },
+  "version": "0.2.2"
+}
